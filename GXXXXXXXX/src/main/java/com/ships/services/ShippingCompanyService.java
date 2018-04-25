@@ -9,12 +9,13 @@ import com.ships.model.Ship;
 import com.ships.repositories.ShipInterface;
 
 @Service
-public class ShippingService {
-
+public class ShippingCompanyService {
+	
 	@Autowired 
 		private ShipInterface shipInterface;
 	
 	public ArrayList<Ship> listAll(){
 		return (ArrayList<Ship>) shipInterface.findAll();
 	}
+
 }
